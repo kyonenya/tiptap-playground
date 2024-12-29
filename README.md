@@ -1,50 +1,11 @@
-# React + TypeScript + Vite
+**https://tiptap-playground.pages.dev/**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- リンク記法：[TiptapとNext.jsでしずかなインターネットのエディターを作ろう](https://zenn.dev/kirik/articles/4584a4e50cb26c#%E6%A8%99%E6%BA%96%E7%9A%84%E3%81%AA%E6%A9%9F%E8%83%BD%E3%81%AB%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%82%92%E5%BD%93%E3%81%A6%E3%82%8B)
+- ツールバーはこれ：[tiptap でリッチテキストエディタ実装](https://zenn.dev/kodaishoituki/articles/f1763ded8b5714#%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A1%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%92%E8%BF%BD%E5%8A%A0)
+- 手始めに：[Tiptapでテキストエディタ実装できます #React - Qiita](https://qiita.com/naoyuki2/items/4a69bfb4476e75ddaea1)
+- 公式チュートリアル：[React | Tiptap Editor Docs](https://tiptap.dev/docs/editor/getting-started/install/react)
+- Vite + React + Cloudflare Pages：[Viteで作成したプロジェクトをCloudflare Pagesにデプロイしてみた | DevelopersIO](https://dev.classmethod.jp/articles/vite-project-deploy-cloudflare-pages/)
 
-Currently, two official plugins are available:
+## リンク
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- [tiptap-playground - Cloudflare ダッシュボード](https://dash.cloudflare.com/459dde42cf7692f0210d7aedf12c8043/pages/view/tiptap-playground)
