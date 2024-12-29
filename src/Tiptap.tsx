@@ -22,7 +22,6 @@ const Tiptap = () => {
 
   const onSave = () => {
     const content = editor.getHTML();
-    console.log(content);
     setValue(content || '');
   };
 
@@ -33,6 +32,8 @@ const Tiptap = () => {
         <EditorContent editor={editor} />
       </div>
       <button onClick={onSave}>保存</button>
+      <h4>保存されたHTML</h4>
+      <pre>{value}</pre>
     </div>
   );
 };
