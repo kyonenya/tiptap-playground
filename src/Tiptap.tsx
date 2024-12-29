@@ -1,5 +1,6 @@
 import { useEditor, EditorContent } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
+import Link from '@tiptap/extension-link';
 import ToolMenu from './ToolMenu';
 import { useLocalStorage } from './useLocalStorage';
 
@@ -9,7 +10,12 @@ const Tiptap = () => {
     '<p>Hello World! 🌎️</p>'
   );
   const editor = useEditor({
-    extensions: [StarterKit],
+    extensions: [
+      StarterKit,
+      Link.configure({
+        openOnClick: true,
+      }),
+    ],
     content: value,
   });
   if (!editor) return null;
