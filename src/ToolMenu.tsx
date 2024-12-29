@@ -6,8 +6,7 @@ import {
   MdUndo,
 } from 'react-icons/md';
 
-const ToolMenu = ({ editor }: { editor: Editor | null }) => {
-  if (!editor) return null;
+const ToolMenu = ({ editor }: { editor: Editor }) => {
   return (
     <div className="flex flex-wrap gap-2 border-b border-gray-600 p-4 text-2xl">
       <button
