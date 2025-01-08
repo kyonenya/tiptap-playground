@@ -11,6 +11,7 @@ import {
   MdTitle,
   MdUndo,
 } from 'react-icons/md';
+import { BsTypeH2, BsTypeH3 } from 'react-icons/bs';
 
 const RichEditorToolbar = ({ editor }: { editor: Editor }) => {
   const setLink = useCallback(() => {
@@ -43,7 +44,16 @@ const RichEditorToolbar = ({ editor }: { editor: Editor }) => {
           !editor.isActive('heading', { level: 2 }) ? 'opacity-20' : ''
         }
       >
-        <MdTitle />
+        <BsTypeH2 />
+      </button>
+      <button
+        type="button"
+        onClick={() => editor.chain().focus().toggleHeading({ level: 3 }).run()}
+        className={
+          !editor.isActive('heading', { level: 3 }) ? 'opacity-20' : ''
+        }
+      >
+        <BsTypeH3 />
       </button>
       <button
         type="button"
