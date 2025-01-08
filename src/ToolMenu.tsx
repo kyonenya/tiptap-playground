@@ -8,7 +8,6 @@ import {
   MdFormatQuote,
   MdFormatStrikethrough,
   MdRedo,
-  MdTitle,
   MdUndo,
 } from 'react-icons/md';
 import { BsTypeH2, BsTypeH3 } from 'react-icons/bs';

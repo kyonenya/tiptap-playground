@@ -1,4 +1,4 @@
-**https://tiptap-playground.pages.dev/**
+**https://tiptap-playground.pages.dev**
 
 JavaScript + React で動作するリッチテキストエディタ Tiptap のサンプル実装です
 
