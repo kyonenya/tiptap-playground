@@ -9,4 +9,5 @@
 
 ## リンク
 
+- 拡張機能一覧：[Extensions | Tiptap Editor Docs https://tiptap.dev/docs/editor/extensions/overview]
 - [tiptap-playground - Cloudflare Dashboard](https://dash.cloudflare.com/459dde42cf7692f0210d7aedf12c8043/pages/view/tiptap-playground)

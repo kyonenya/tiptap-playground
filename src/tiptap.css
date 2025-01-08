@@ -1,0 +1,15 @@
+blockquote {
+  padding-left: 0.5rem;
+  margin-inline-start: 1.5rem;
+  border-left: 2px solid darkgray;
+  color: gray;
+}
+
+/* Placeholder (at the top) */
+.ProseMirror p.is-editor-empty:first-child::before {
+  color: lightgray;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
