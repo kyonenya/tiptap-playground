@@ -51,8 +51,10 @@ const Tiptap = () => {
         </BubbleMenu>
       </div>
       <button onClick={onSave}>保存</button>
+      <hr />
       <h4>保存されたHTML</h4>
       <pre>{value}</pre>
+      <hr />
       <div>
         <ReadOnlyEditor content={value} />
       </div>
