@@ -5,6 +5,7 @@ import Placeholder from '@tiptap/extension-placeholder';
 import ToolMenu from './ToolMenu';
 import { useLocalStorage } from './useLocalStorage';
 import { BubbleLink } from './BubbleLink';
+import { ReadOnlyEditor } from './ReadonlyEditor';
 
 const Tiptap = () => {
   const [value, setValue] = useLocalStorage(
@@ -34,7 +35,7 @@ const Tiptap = () => {
   return (
     <div className="w-2/3 mt-10 mx-auto border-gray-500 border-2">
       <ToolMenu editor={editor} />
-      <div className="p-3 overflow-y-scroll h-[70vh] overflow-hidden mt-3">
+      <div className="p-3 overflow-y-s    croll h-[70vh] overflow-hidden mt-3">
         <EditorContent editor={editor} />
         <BubbleMenu
           editor={editor}
@@ -52,6 +53,9 @@ const Tiptap = () => {
       <button onClick={onSave}>保存</button>
       <h4>保存されたHTML</h4>
       <pre>{value}</pre>
+      <div>
+        <ReadOnlyEditor content={value} />
+      </div>
     </div>
   );
 };
